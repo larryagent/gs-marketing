@@ -445,3 +445,55 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── PULSE ANIMATION ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 10px var(--gold); }
+  50% { opacity: 0.5; box-shadow: 0 0 4px var(--gold); }
+}
+
+/* ── SERVICE LIST (editorial numbered) ── */
+.services-list {
+  display: flex;
+  flex-direction: column;
+}
+.service-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 32px;
+  align-items: start;
+  padding: 36px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.2s;
+}
+.service-row:first-child {
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.service-row:hover {
+  background: rgba(255,255,255,0.015);
+}
+.service-row-num {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: rgba(245,200,66,0.4);
+  padding-top: 4px;
+}
+.service-row-body {}
+.service-row-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .service-row {
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+  }
+  .service-row-detail {
+    display: none;
+  }
+}
