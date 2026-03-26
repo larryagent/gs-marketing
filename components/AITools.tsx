@@ -54,7 +54,7 @@ export default function AITools() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", alignItems: "start" }}>
+        <div className="aitools-grid">
           {/* Controls */}
           <div className="reveal ai-panel">
             <label style={{ display: "block", fontFamily: "'Bebas Neue', cursive", letterSpacing: "0.1em", fontSize: "0.85rem", color: "rgba(255,255,255,0.5)", marginBottom: "10px" }}>

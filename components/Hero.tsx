@@ -79,7 +79,7 @@ export default function Hero() {
       }} />
 
       {/* Content */}
-      <div style={{ position: "relative", zIndex: 10, maxWidth: "1200px", margin: "0 auto", padding: "120px 48px 80px", width: "100%" }}>
+      <div className="hero-content">
         {/* Badge */}
         <div style={{
           display: "inline-flex", alignItems: "center", gap: "8px",
@@ -93,7 +93,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "clamp(4rem, 9vw, 8rem)", lineHeight: 0.95, letterSpacing: "0.02em", maxWidth: "800px", marginBottom: "28px" }}>
+        <h1 style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "clamp(3.2rem, 12vw, 8rem)", lineHeight: 0.95, letterSpacing: "0.02em", marginBottom: "24px" }}>
           <span style={{ color: "#fff" }}>We Don't Just</span>
           <br />
           <span style={{ color: "var(--gold)" }}>Build Teams.</span>
@@ -104,12 +104,12 @@ export default function Hero() {
         </h1>
 
         {/* Subtext */}
-        <p style={{ fontSize: "1.15rem", color: "rgba(255,255,255,0.55)", maxWidth: "520px", lineHeight: 1.7, marginBottom: "44px", fontWeight: 300 }}>
+        <p style={{ fontSize: "clamp(0.95rem, 3.5vw, 1.15rem)", color: "rgba(255,255,255,0.55)", maxWidth: "520px", lineHeight: 1.7, marginBottom: "36px", fontWeight: 300 }}>
           GS Marketing builds elite sales teams that outperform, outclose, and outdeliver. We don't just dominate the fiber space — we define it.
         </p>
 
         {/* CTAs */}
-        <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
+        <div className="hero-ctas">
           <a href="#apply" className="btn-gold" style={{ fontSize: "1rem" }}>
             Join the Team →
           </a>
@@ -119,14 +119,14 @@ export default function Hero() {
         </div>
 
         {/* Quick stats */}
-        <div style={{ display: "flex", gap: "48px", marginTop: "72px", flexWrap: "wrap" }}>
+        <div className="hero-stats">
           {[
             { num: "$40K+", label: "Avg Rookie Year" },
             { num: "$173K+", label: "Avg Vet Year" },
             { num: "$365K+", label: "Avg Manager Year" },
           ].map((s) => (
             <div key={s.label}>
-              <div style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "2rem", color: "var(--gold)", lineHeight: 1 }}>{s.num}</div>
+              <div style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "clamp(1.5rem, 5vw, 2rem)", color: "var(--gold)", lineHeight: 1 }}>{s.num}</div>
               <div style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.4)", letterSpacing: "0.1em", textTransform: "uppercase", marginTop: "4px" }}>{s.label}</div>
             </div>
           ))}
