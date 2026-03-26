@@ -152,11 +152,6 @@ export default function Hero() {
       }} />
 
       <div className="hero-content">
-        <div className="hero-badge">
-          <span className="hero-badge-dot" />
-          <span>#1 FIBER SALES ORGANIZATION</span>
-        </div>
-
         <h1 className="hero-h1">
           <span style={{ color: "#fff", display: "block" }}>We Don't Just</span>
           <span style={{ color: "var(--gold)", display: "block" }}>Build Teams.</span>
