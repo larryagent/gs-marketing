@@ -1,6 +1,12 @@
 "use client";
 export default function Footer() {
-  const links = ["About", "Results", "Services", "Earnings", "Apply"];
+  const links = [
+    { label: "About", href: "/about" },
+    { label: "Results", href: "/results" },
+    { label: "Services", href: "/services" },
+    { label: "Apply", href: "/#apply" },
+  ];
+
   return (
     <footer style={{ background: "#000", borderTop: "1px solid rgba(255,255,255,0.05)", padding: "56px 0 32px" }}>
       <div className="container">
@@ -21,7 +27,7 @@ export default function Footer() {
 
           <div className="footer-links">
             {links.map((l) => (
-              <a key={l} href={`#${l.toLowerCase()}`} className="footer-link">{l}</a>
+              <a key={l.label} href={l.href} className="footer-link">{l.label}</a>
             ))}
           </div>
 
