@@ -4,11 +4,11 @@ import "./globals.css";
 const BASE_URL = "https://gs-marketing-jio6.vercel.app";
 
 export const metadata: Metadata = {
-  title: "GS Marketing — Elite Sales Teams",
-  description: "GS Marketing builds elite door-to-door sales teams that dominate the fiber optic industry. We don't just sell. We dominate.",
+  title: "GS Marketing",
+  description: "GS Marketing builds elite door-to-door sales teams that dominate the fiber optic industry.",
   metadataBase: new URL(BASE_URL),
   openGraph: {
-    title: "GS Marketing — Elite Sales Teams",
+    title: "GS Marketing",
     description: "Elite fiber sales teams that outperform, outclose, and outdeliver.",
     url: BASE_URL,
     siteName: "GS Marketing",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GS Marketing — Elite Sales Teams",
+    title: "GS Marketing",
     description: "Elite fiber sales teams that outperform, outclose, and outdeliver.",
     images: [`/og?title=We+Don%27t+Just+Build+Teams.+We+Build+Dynasties.`],
   },
